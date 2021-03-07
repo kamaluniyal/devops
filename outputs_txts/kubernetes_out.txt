@@ -1,0 +1,24 @@
+cloud9:~/environment/devops (main) $ ./run_kubernetes.sh
+
+Error from server (AlreadyExists): pods "pybuild1" already exists
+NAME       READY   STATUS    RESTARTS   AGE
+pybuild1   1/1     Running   0          35s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+
+
+cloud9:~/environment/devops (main) $ ./make_prediction.sh
+
+Port: 8000
+
+{
+
+  "prediction": [
+
+    20.35373177134412
+
+  ]
+
+}
